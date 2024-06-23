@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv2dr4wk56vvy"]
+
+[ext_resource type="Script" path="res://game/rooms/main_scene/room_main_scene.gd" id="1_x23f7"]
+
+[node name="RoomMainScene" type="Node2D"]
+script = ExtResource("1_x23f7")
+script_name = "MainScene"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
