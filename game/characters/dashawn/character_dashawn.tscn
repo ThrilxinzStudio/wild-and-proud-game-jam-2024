@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxsuxj6tl7aej"]
+
+[ext_resource type="Script" path="res://game/characters/dashawn/character_dashawn.gd" id="1_6nun0"]
+[ext_resource type="Texture2D" uid="uid://5oixxh30h4x5" path="res://art/SFCP 1-29.png" id="2_mtgsl"]
+
+[node name="CharacterDashawn" type="Area2D"]
+script = ExtResource("1_6nun0")
+text_color = Color(0, 0.889412, 0.891266, 1)
+can_move = false
+popochiu_placeholder = null
+script_name = "Dashawn"
+description = "Dashawn"
+cursor = 8
+interaction_polygon = PackedVector2Array()
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.143, 0.143)
+texture = ExtResource("2_mtgsl")
+
+[node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-64, -88, 64, -88, 64, 88, -64, 88)
+
+[node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
+
+[node name="BaselineHelper" type="Line2D" parent="."]
+visible = false
+points = PackedVector2Array(-10000, 0, 10000, 0)
+width = 1.0
+
+[node name="WalkToHelper" type="Marker2D" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
+offset_left = -2.5
+offset_top = -2.5
+offset_right = 2.5
+offset_bottom = 2.5
+color = Color(0, 1, 1, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="DialogPos" type="Marker2D" parent="."]
+visible = false
