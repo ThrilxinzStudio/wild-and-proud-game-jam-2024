@@ -14,7 +14,7 @@ func _on_click() -> void:
 	# something:
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
-	await C.player.say("The foundation of my new home. The first big step!")
+	await C.player.say("This tree is so pretty. I can't wait to add a flower bed under it.")
 
 
 func _on_double_click() -> void:
@@ -31,7 +31,7 @@ func _on_right_click() -> void:
 	E.command_fallback()
 	# For example, you can make the player character gaze at this hotspot and then say something:
 #	await C.player.face_clicked()
-
+#	await C.player.say("A window")
 
 
 # When the node is middle clicked

@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbhnyn2b0d2b"]
+[gd_scene load_steps=9 format=3 uid="uid://bbhnyn2b0d2b"]
 
 [ext_resource type="Script" path="res://game/rooms/new_beginning/room_new_beginning.gd" id="1_kel5g"]
 [ext_resource type="PackedScene" uid="uid://dc2tuvrl1orlj" path="res://game/rooms/new_beginning/props/background_foundation/prop_background_foundation.tscn" id="2_ofkjk"]
 [ext_resource type="Texture2D" uid="uid://cp6h1adng3lf2" path="res://art/image(1).png" id="3_s0e1n"]
 [ext_resource type="PackedScene" uid="uid://dsa72h35yyln3" path="res://game/rooms/new_beginning/hotspots/foundation/hotspot_foundation.tscn" id="4_3667w"]
 [ext_resource type="PackedScene" uid="uid://06riyhfalm8j" path="res://game/characters/player/character_player.tscn" id="4_w1or5"]
+[ext_resource type="PackedScene" uid="uid://c0mmk143w165y" path="res://game/rooms/new_beginning/hotspots/tree/hotspot_tree.tscn" id="5_6shc4"]
 [ext_resource type="PackedScene" uid="uid://cxsuxj6tl7aej" path="res://game/characters/dashawn/character_dashawn.tscn" id="5_iqnxq"]
+[ext_resource type="PackedScene" uid="uid://dhenhck00dwnt" path="res://game/rooms/new_beginning/hotspots/sky/hotspot_sky.tscn" id="6_7b8l2"]
 
 [node name="RoomNewBeginning" type="Node2D"]
 script = ExtResource("1_kel5g")
@@ -24,8 +26,20 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 [node name="Hotspots" type="Node2D" parent="."]
 
 [node name="Foundation" parent="Hotspots" instance=ExtResource("4_3667w")]
-position = Vector2(484, 274.5)
-interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+position = Vector2(465, 383)
+cursor = 5
+interaction_polygon = PackedVector2Array(-177, -20, 197, -22, 195, 30, -140, 30)
+
+[node name="Tree" parent="Hotspots" instance=ExtResource("5_6shc4")]
+position = Vector2(736, 255)
+cursor = 5
+interaction_polygon = PackedVector2Array(-111, -76, -9, -114, 86, -94, 99, 71, 32, 71, 17, 178, -28, 54, -111, 36)
+
+[node name="Sky" parent="Hotspots" instance=ExtResource("6_7b8l2")]
+position = Vector2(344, 176)
+cursor = 5
+interaction_polygon = PackedVector2Array(-302, -128, 226, -110, 236, 30, -309, 25)
+interaction_polygon_position = Vector2(28, -2)
 
 [node name="Regions" type="Node2D" parent="."]
 
@@ -34,7 +48,7 @@ interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="CharacterPlayer *" parent="Characters" instance=ExtResource("4_w1or5")]
-position = Vector2(696, 448)
+position = Vector2(99, 415)
 
 [node name="CharacterDashawn *" parent="Characters" instance=ExtResource("5_iqnxq")]
-position = Vector2(784, 438)
+position = Vector2(176, 415)
