@@ -48,7 +48,7 @@ interaction_polygon_position = Vector2(28, -2)
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="CharacterPlayer *" parent="Characters" instance=ExtResource("4_w1or5")]
-position = Vector2(99, 415)
+position = Vector2(134, 418)
 
 [node name="CharacterDashawn *" parent="Characters" instance=ExtResource("5_iqnxq")]
-position = Vector2(176, 415)
+position = Vector2(228, 413)

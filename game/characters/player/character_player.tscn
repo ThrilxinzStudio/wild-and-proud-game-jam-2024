@@ -5,11 +5,11 @@
 
 [node name="CharacterPlayer" type="Area2D"]
 script = ExtResource("1_ie31q")
-text_color = Color(0.9918, 0.987641, 0, 1)
+text_color = Color(0.880391, 0.140232, 0.0362653, 1)
 can_move = false
 popochiu_placeholder = null
 script_name = "Player"
-description = "Player"
+description = "You"
 cursor = 8
 interaction_polygon = PackedVector2Array()
 
@@ -18,19 +18,16 @@ texture_filter = 1
 texture = ExtResource("2_magx0")
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
-visible = false
 polygon = PackedVector2Array(-14, -51, 8, -51, 6, -18, 20, -23, 26, -19, 7.49235, -1.25008, 7, 47, -3, 58, -15, 53, -21, -7)
 
 [node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)
 
 [node name="BaselineHelper" type="Line2D" parent="."]
-visible = false
 points = PackedVector2Array(-10000, 0, 10000, 0)
 width = 1.0
 
 [node name="WalkToHelper" type="Marker2D" parent="."]
-visible = false
 
 [node name="ColorRect" type="ColorRect" parent="WalkToHelper"]
 offset_left = -2.5
@@ -42,4 +39,3 @@ color = Color(0, 1, 1, 1)
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="DialogPos" type="Marker2D" parent="."]
-visible = false
