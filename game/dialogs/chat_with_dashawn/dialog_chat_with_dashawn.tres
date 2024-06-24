@@ -9,7 +9,7 @@ script = ExtResource("1_t12dq")
 id = "Greet"
 text = "You made it, Dashawn. I was beginning to think you got lost."
 visible = true
-disabled = true
+disabled = false
 always_on = false
 
 [sub_resource type="Resource" id="Resource_gj2iy"]
@@ -17,8 +17,8 @@ resource_name = "Ask"
 script = ExtResource("1_t12dq")
 id = "Ask"
 text = "What was it like for you? Moving here, I mean."
-visible = false
-disabled = true
+visible = true
+disabled = false
 always_on = false
 
 [sub_resource type="Resource" id="Resource_kiig2"]
@@ -26,8 +26,8 @@ resource_name = "Name"
 script = ExtResource("1_t12dq")
 id = "Name"
 text = "You know, I was thinking… this place needs a name. Something that feels right."
-visible = false
-disabled = true
+visible = true
+disabled = false
 always_on = false
 
 [resource]

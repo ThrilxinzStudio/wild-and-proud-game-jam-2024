@@ -8,10 +8,10 @@ func _on_start() -> void:
 	# E.g. Make the PC to look at the character which it will talk to, walk to
 	# it, and say something (or make the character say something):
 #	await C.player.face_clicked()
-#	await C.player.say("Hi")
+	await C.player.say("Oh, there you are...")
 #	await C.Popsy.say("Oh! Hi...")
 	# (!) It MUST always use an await
-	await E.get_tree().process_frame
+	#await E.get_tree().process_frame
 
 
 func _option_selected(opt: PopochiuDialogOption) -> void:
