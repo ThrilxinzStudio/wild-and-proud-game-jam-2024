@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://game/rooms/main_scene/room_main_scene.gd" id="1_x23f7"]
 [ext_resource type="PackedScene" uid="uid://ccta83cb87ro8" path="res://game/rooms/main_scene/props/background/prop_background.tscn" id="2_n7j6h"]
 [ext_resource type="Texture2D" uid="uid://ven64vmhd1es" path="res://art/img_background.png" id="3_bjkvd"]
-[ext_resource type="PackedScene" uid="uid://bv0seshl5dktq" path="res://game/characters/player/character_player.tscn" id="4_33lbx"]
+[ext_resource type="PackedScene" uid="uid://06riyhfalm8j" path="res://game/characters/player/character_player.tscn" id="4_33lbx"]
 [ext_resource type="PackedScene" uid="uid://cxsuxj6tl7aej" path="res://game/characters/dashawn/character_dashawn.tscn" id="5_jsnwr"]
 
 [node name="RoomMainScene" type="Node2D"]
