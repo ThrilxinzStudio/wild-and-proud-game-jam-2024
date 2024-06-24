@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://06riyhfalm8j"]
 
 [ext_resource type="Script" path="res://game/characters/player/character_player.gd" id="1_ie31q"]
-[ext_resource type="Texture2D" uid="uid://dp4d5lplexfpg" path="res://art/SFCP 1-96.png" id="2_ghqod"]
+[ext_resource type="Texture2D" uid="uid://d38y7pk8gw8ee" path="res://art/person_sillo1.png" id="2_magx0"]
 
 [node name="CharacterPlayer" type="Area2D"]
 script = ExtResource("1_ie31q")
@@ -15,12 +15,11 @@ interaction_polygon = PackedVector2Array()
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(0.143, 0.143)
-texture = ExtResource("2_ghqod")
+texture = ExtResource("2_magx0")
 
 [node name="InteractionPolygon" type="CollisionPolygon2D" parent="."]
 visible = false
-polygon = PackedVector2Array(-64, -88, 64, -88, 64, 88, -64, 88)
+polygon = PackedVector2Array(-14, -51, 8, -51, 6, -18, 20, -23, 26, -19, 7.49235, -1.25008, 7, 47, -3, 58, -15, 53, -21, -7)
 
 [node name="ScalingPolygon" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0)

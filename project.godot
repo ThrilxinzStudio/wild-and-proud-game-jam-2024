@@ -29,12 +29,11 @@ G="*res://addons/popochiu/engine/interfaces/i_graphic_interface.gd"
 
 [display]
 
-window/size/viewport_width=960
-window/size/viewport_height=550
+window/size/viewport_width=968
+window/size/viewport_height=549
 window/size/window_width_override=960
 window/size/window_height_override=550
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [editor_plugins]
 
