@@ -1,12 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbhnyn2b0d2b"]
+[gd_scene load_steps=11 format=3 uid="uid://bbhnyn2b0d2b"]
 
 [ext_resource type="Script" path="res://game/rooms/new_beginning/room_new_beginning.gd" id="1_kel5g"]
 [ext_resource type="PackedScene" uid="uid://dc2tuvrl1orlj" path="res://game/rooms/new_beginning/props/background_foundation/prop_background_foundation.tscn" id="2_ofkjk"]
 [ext_resource type="Texture2D" uid="uid://cp6h1adng3lf2" path="res://art/image(1).png" id="3_s0e1n"]
 [ext_resource type="PackedScene" uid="uid://dsa72h35yyln3" path="res://game/rooms/new_beginning/hotspots/foundation/hotspot_foundation.tscn" id="4_3667w"]
+[ext_resource type="PackedScene" uid="uid://dfrgnhh3kx28h" path="res://game/rooms/new_beginning/props/bricks/prop_bricks.tscn" id="4_so28a"]
 [ext_resource type="PackedScene" uid="uid://06riyhfalm8j" path="res://game/characters/player/character_player.tscn" id="4_w1or5"]
 [ext_resource type="PackedScene" uid="uid://c0mmk143w165y" path="res://game/rooms/new_beginning/hotspots/tree/hotspot_tree.tscn" id="5_6shc4"]
 [ext_resource type="PackedScene" uid="uid://cxsuxj6tl7aej" path="res://game/characters/dashawn/character_dashawn.tscn" id="5_iqnxq"]
+[ext_resource type="Texture2D" uid="uid://2hhj3ophdf1l" path="res://art/bricks.png" id="5_v0k3m"]
 [ext_resource type="PackedScene" uid="uid://dhenhck00dwnt" path="res://game/rooms/new_beginning/hotspots/sky/hotspot_sky.tscn" id="6_7b8l2"]
 
 [node name="RoomNewBeginning" type="Node2D"]
@@ -22,6 +24,12 @@ popochiu_placeholder = null
 position = Vector2(481, 276)
 texture = ExtResource("3_s0e1n")
 interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Bricks" parent="Props" instance=ExtResource("4_so28a")]
+position = Vector2(677, 483)
+texture = ExtResource("5_v0k3m")
+description = "Bricks: click to go to next part"
+interaction_polygon = PackedVector2Array(-54, 9, -40, 6, -40, -1, -14, 0, -15, 9, 11, 8, 11, 0, 33, 0, 32, 6, 49, 8, 49, 20, 61, 20, 61, 36, -59, 36)
 
 [node name="Hotspots" type="Node2D" parent="."]
 

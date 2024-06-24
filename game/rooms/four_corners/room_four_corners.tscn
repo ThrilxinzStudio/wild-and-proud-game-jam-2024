@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvl5s5w55ab0"]
+
+[ext_resource type="Script" path="res://game/rooms/four_corners/room_four_corners.gd" id="1_ubh0r"]
+[ext_resource type="PackedScene" uid="uid://bwh7hp5bl2agx" path="res://game/rooms/four_corners/props/background_part_two/prop_background_part_two.tscn" id="2_8xenw"]
+[ext_resource type="Texture2D" uid="uid://bm0j23yxmkwuw" path="res://art/image(2).png" id="3_pk6nx"]
+[ext_resource type="PackedScene" uid="uid://30vjrmhd4lms" path="res://game/rooms/four_corners/hotspots/your_home/hotspot_your_home.tscn" id="4_1cd54"]
+[ext_resource type="PackedScene" uid="uid://06riyhfalm8j" path="res://game/characters/player/character_player.tscn" id="5_214kd"]
+[ext_resource type="PackedScene" uid="uid://cxsuxj6tl7aej" path="res://game/characters/dashawn/character_dashawn.tscn" id="6_y8qqf"]
+
+[node name="RoomFourCorners" type="Node2D"]
+script = ExtResource("1_ubh0r")
+script_name = "FourCorners"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="BackgroundPartTwo" parent="Props" instance=ExtResource("2_8xenw")]
+position = Vector2(484, 274.5)
+texture = ExtResource("3_pk6nx")
+interaction_polygon = PackedVector2Array(-12, -12, 12, -12, 12, 12, -12, 12)
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="YourHome" parent="Hotspots" instance=ExtResource("4_1cd54")]
+position = Vector2(487, 294)
+description = "Your home"
+cursor = 5
+interaction_polygon = PackedVector2Array(-201, -68, 166, -63, 164, 87, -206, 87)
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]
+
+[node name="CharacterPlayer *" parent="Characters" instance=ExtResource("5_214kd")]
+position = Vector2(132, 423)
+
+[node name="CharacterDashawn *" parent="Characters" instance=ExtResource("6_y8qqf")]
+position = Vector2(484, 274.5)
