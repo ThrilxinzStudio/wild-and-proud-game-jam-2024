@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://lulfl7avgkwo"]
+
+[ext_resource type="Script" path="res://game/rooms/new_beginning/room_new_beginning_state.gd" id="1_7yeup"]
+
+[resource]
+resource_name = "NewBeginning"
+script = ExtResource("1_7yeup")
+script_name = "NewBeginning"
+scene = "res://game/rooms/new_beginning/room_new_beginning.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

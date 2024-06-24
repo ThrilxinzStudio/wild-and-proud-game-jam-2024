@@ -1,9 +1,9 @@
 @tool
 extends PopochiuRoom
 
-const Data := preload('room_main_scene_state.gd')
+const Data := preload('room_new_beginning_state.gd')
 
-var state: Data = load('res://game/rooms/main_scene/room_main_scene.tres')
+var state: Data = load('res://game/rooms/new_beginning/room_new_beginning.tres')
 
 
 #region Virtual ####################################################################################

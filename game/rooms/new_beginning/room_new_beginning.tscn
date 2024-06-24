@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbhnyn2b0d2b"]
+
+[ext_resource type="Script" path="res://game/rooms/new_beginning/room_new_beginning.gd" id="1_kel5g"]
+
+[node name="RoomNewBeginning" type="Node2D"]
+script = ExtResource("1_kel5g")
+script_name = "NewBeginning"
+popochiu_placeholder = null
+
+[node name="WalkableAreas" type="Node2D" parent="."]
+
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Hotspots" type="Node2D" parent="."]
+
+[node name="Regions" type="Node2D" parent="."]
+
+[node name="Markers" type="Node2D" parent="."]
+
+[node name="Characters" type="Node2D" parent="."]

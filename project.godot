@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Wild-and-proud-game-jam-2024"
-run/main_scene="res://game/rooms/main_scene/room_main_scene.tscn"
+run/main_scene="res://game/rooms/new_beginning/room_new_beginning.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -29,7 +29,12 @@ G="*res://addons/popochiu/engine/interfaces/i_graphic_interface.gd"
 
 [display]
 
+window/size/viewport_width=960
+window/size/viewport_height=550
+window/size/window_width_override=960
+window/size/window_height_override=550
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
@@ -55,4 +60,4 @@ popochiu-skip={
 
 [popochiu]
 
-pixel/pixel_art_textures=true
+pixel/pixel_art_textures=false

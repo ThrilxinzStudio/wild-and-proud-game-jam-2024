@@ -2,14 +2,14 @@
 extends "res://addons/popochiu/engine/interfaces/i_room.gd"
 
 # classes ----
-const PRMainScene := preload("res://game/rooms/main_scene/room_main_scene.gd")
+const PRNewBeginning := preload("res://game/rooms/new_beginning/room_new_beginning.gd")
 # ---- classes
 
 # nodes ----
-var MainScene: PRMainScene : get = get_MainScene
+var NewBeginning: PRNewBeginning : get = get_NewBeginning
 # ---- nodes
 
 # functions ----
-func get_MainScene() -> PRMainScene: return super.get_runtime_room("MainScene")
+func get_NewBeginning() -> PRNewBeginning: return super.get_runtime_room("NewBeginning")
 # ---- functions
 
