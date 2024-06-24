@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://casvc16wgt7q5"]
+
+[ext_resource type="Script" path="res://game/rooms/to_be_continued/room_to_be_continued_state.gd" id="1_7n53p"]
+
+[resource]
+resource_name = "ToBeContinued"
+script = ExtResource("1_7n53p")
+script_name = "ToBeContinued"
+scene = "res://game/rooms/to_be_continued/room_to_be_continued.tscn"
+visited = false
+visited_first_time = false
+visited_times = 0

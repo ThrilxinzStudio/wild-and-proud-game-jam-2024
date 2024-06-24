@@ -1,5 +1,5 @@
 @tool
-extends PopochiuHotspot
+extends PopochiuProp
 # You can use E.queue([]) to trigger a sequence of events.
 # Use await E.queue([]) if you want to pause the excecution of
 # the function until the sequence of events finishes.
@@ -8,36 +8,28 @@ extends PopochiuHotspot
 #region Virtual ####################################################################################
 # When the node is clicked
 func _on_click() -> void:
-	# Replace the call to E.command_fallback() with your code.
-	#E.command_fallback()
-	# For example, you can make the player character walk to this hotspot, gaze at it, and then say
+	# Replace the call to E.command_fallback() to implement your code.
+	E.command_fallback()
+	# For example, you can make the player character walk to this prop, gaze at it, and then say
 	# something:
 #	await C.player.walk_to_clicked()
 #	await C.player.face_clicked()
-	await C.player.say("The walls are up now. I still can't believe it. How I got here... ")
-	await C.player.say("It's coming together very well, so far.")
-	await C.player.say("I can't wait for Dashawn to come back with tuna sandwishes, I'm starving.")
-	await C.player.say("But for now...")
-	await E.wait(1.0)
-	await C.player.say("I'm just gonna sit back and enjoy the moment. Life is looking up, yea!")
-	E.goto_room("ToBeContinued")
+#	await C.player.say("Not picking that up!")
 
 
 func _on_double_click() -> void:
 	# Replace the call to E.command_fallback() with your code.
 	E.command_fallback()
-	# For example, you could make the player instantly goto another room on an exit hotspot instead
-	# of waiting for the player to walk there.
-#	await E.goto_room("NewRoom")
+	# For example, you could make the player instantly do something instead of walking there first
 
 
 # When the node is right clicked
 func _on_right_click() -> void:
-	# Replace the call to E.command_fallback() with your code.
+	# Replace the call to E.command_fallback() to implement your code.
 	E.command_fallback()
-	# For example, you can make the player character gaze at this hotspot and then say something:
+	# For example, you can make the player character gaze at this prop and then say something:
 #	await C.player.face_clicked()
-#	await C.player.say("A window")
+#	await C.player.say("A deck of cards")
 
 
 # When the node is middle clicked
@@ -51,9 +43,21 @@ func _on_item_used(_item: PopochiuInventoryItem) -> void:
 	# Replace the call to E.command_fallback() to implement your code.
 	E.command_fallback()
 	# For example, you can make the player character say something when the Key item is used in this
-	# hotspot. Note that you have to change the name of the `_item` parameter to `item`.
+	# prop. Note that you have to change the name of the `_item` parameter to `item`.
 #	if item == I.Key:
-#		await C.player.say("No can do")
+#		await C.player.say("I can't do that")
+
+
+# When an inventory item linked to this Prop (link_to_item) is removed from
+# the inventory (i.e. when it is used in something that makes use of the object).
+func _on_linked_item_removed() -> void:
+	pass
+
+
+# When an inventory item linked to this Prop (link_to_item) is discarded from
+# the inventory (i.e. when the player throws the object out of the inventory).
+func _on_linked_item_discarded() -> void:
+	pass
 
 
 #endregion
